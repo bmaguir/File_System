@@ -84,12 +84,18 @@ class File_Service < Server
           #remove entries from update array
         end
       when "FSAddr"
+        #new FS added
         stringFS = msg["file_servers"]
         tempArray = Array.new
         for sft in stringFS.each
           tempArray.push(stringFS.to_int)
         end
         $FileServers = tempArray
+      when "Update"
+        write(msg["filename"], msg["content"])
+      when "Replicate"
+        registerFile(msg["filename"])
+        write(msg["filename"], msg["content"])
       else
         #undefined message
     end
@@ -97,7 +103,16 @@ class File_Service < Server
 
   def replicateFile(fn)
     registerFile(fn)
-    #send file to two other Servers
+    content = read(fn)
+    hostname = 'localhost'
+    #send file to two other Servers for replication
+    for fs in $FileServers
+      if fs != $port
+        s = TCPSocket.open(hostname, fs)
+        s.puts '{"type":"Replicate","filename":"' + fn + '","content":"' + content + '"}' + "\n\r\n"
+        s.close
+      end
+    end
   end
 
   def clearLock(fn)
@@ -105,7 +120,15 @@ class File_Service < Server
     port = 4444
     s = TCPSocket.open(hostname, port)
     s.puts '{"type":"ClearLock", "port":"' + $port.to_s + '", "filename":"' + fn + '"}' + "\n\r\n"
+    response = readFromSocket(s)
     s.close
+    #update FS that have replicated file
+    updateContent = read(fn)
+    replicateAddr = response["fs"]
+    for addr in replicateAddr
+      s = TCPSocket.open(hostname, addr.to_i)
+      s.puts '{"type":"Update", "filename":"' + fn + '", "content":"' + updateContent +'"}' + "\n\r\n"
+    end
   end
 
   def checkTimeStamp(ts)
@@ -151,10 +174,6 @@ end
 class UpdatedFiles
   attr_accessor :lockTS, :name, :updatedContent
 end
-
-#class FileClassFS < FileClass
-#  attr_accessor :content, :contentBuffer
-#end
 
 fs = File_Service.new(4253, 'server1')
 fs.connectToDs

@@ -43,7 +43,8 @@ class Dir_Server < Server
         addFile(msg["port"], msg["filename"])
         #puts "added new file " + msg["filename"]
       when "ClearLock"
-        clearLock(msg["filename"])
+        fs = clearLock(msg["filename"])
+        client.puts '{"type":"Replicate", "Addr":' + fs +'}'
       else
         puts "undefined message"
     end
@@ -77,6 +78,7 @@ class Dir_Server < Server
     for file in $Directory
       if file.name = filename
         file.lock =  false
+        return file.fs
       end
     end
   end
