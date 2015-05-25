@@ -1,0 +1,9 @@
+File System implements
+
+Directory Service  - dir_server, holds a list of all available files and the FileServers which have them. Distributes locks to clients.
+
+Locking - Implements simple locking, each file can only be accessed on at a time. Locks expire after time, and changes are reverted if not closed before hand
+
+Caching - Client side cache holds all files previously accessed. Uses File if logical Time stamp in Cache is the same as Logical time stamp returned from Directory Server
+
+Replication - Files are stored on all available FileServers. Files are synced after file close. Locking makes concurrent access impossible.

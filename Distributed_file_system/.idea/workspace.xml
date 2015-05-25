@@ -14,8 +14,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Distributed_file_system@dir_server.coverage" NAME="dir_server Coverage Results" MODIFIED="1432509877574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Distributed_file_system" />
-    <SUITE FILE_PATH="coverage/Distributed_file_system@file_service.coverage" NAME="file_service Coverage Results" MODIFIED="1432509880960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Distributed_file_system" />
+    <SUITE FILE_PATH="coverage/Distributed_file_system@dir_server.coverage" NAME="dir_server Coverage Results" MODIFIED="1432556987883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Distributed_file_system" />
+    <SUITE FILE_PATH="coverage/Distributed_file_system@file_service.coverage" NAME="file_service Coverage Results" MODIFIED="1432556989959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Distributed_file_system" />
     <SUITE FILE_PATH="coverage/Distributed_file_system@Main_Server.coverage" NAME="Main_Server Coverage Results" MODIFIED="1422548104531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Distributed_file_system" />
     <SUITE FILE_PATH="coverage/Distributed_file_system@Run_test__maze_test___Distributed_file_system.coverage" NAME="Run test 'maze_test': Distributed_file_system Coverage Results" MODIFIED="1425053295801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Distributed_file_system" />
     <SUITE FILE_PATH="coverage/Distributed_file_system@test_client.coverage" NAME="test_client Coverage Results" MODIFIED="1432508133216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Distributed_file_system" />
@@ -45,11 +45,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dir_server.rb" pinned="false" current-in-tab="false">
+          <file leaf-file-name="dir_server.rb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/dir_server.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1921">
-                  <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
+                <state vertical-scroll-proportion="0.3908046" vertical-offset="442" max-vertical-offset="1921">
+                  <caret line="38" column="56" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
                   <folding />
                 </state>
               </provider>
@@ -85,11 +85,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="file_class.rb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="file_class.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/file_class.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.17324841" vertical-offset="0" max-vertical-offset="785">
-                  <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+                  <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -98,8 +98,18 @@
           <file leaf-file-name="file_service.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/file_service.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="3162">
+                <state vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="3179">
                   <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ReadMe" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ReadMe">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+                  <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
                   <folding />
                 </state>
               </provider>
@@ -112,8 +122,8 @@
           <file leaf-file-name="file_service.rb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/file_service.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.25660378" vertical-offset="1819" max-vertical-offset="3162">
-                  <caret line="119" column="15" selection-start-line="119" selection-start-column="15" selection-end-line="119" selection-end-column="15" />
+                <state vertical-scroll-proportion="0.7504587" vertical-offset="2634" max-vertical-offset="3179">
+                  <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -131,10 +141,11 @@
         <option value="$PROJECT_DIR$/test_client.rb" />
         <option value="$PROJECT_DIR$/server.rb" />
         <option value="$PROJECT_DIR$/testclass.rb" />
-        <option value="$PROJECT_DIR$/file_service.rb" />
         <option value="$PROJECT_DIR$/client_proxy.rb" />
-        <option value="$PROJECT_DIR$/dir_server.rb" />
         <option value="$PROJECT_DIR$/file_class.rb" />
+        <option value="$PROJECT_DIR$/ReadMe" />
+        <option value="$PROJECT_DIR$/dir_server.rb" />
+        <option value="$PROJECT_DIR$/file_service.rb" />
       </list>
     </option>
   </component>
@@ -197,7 +208,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="true" />
   </component>
-  <component name="RunManager" selected="Ruby.testclass">
+  <component name="RunManager" selected="Ruby.file_service">
     <configuration default="false" name="file_service" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="Distributed_file_system" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -341,9 +352,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Ruby.testclass" />
+        <item index="0" class="java.lang.String" itemvalue="Ruby.file_service" />
         <item index="1" class="java.lang.String" itemvalue="Ruby.dir_server" />
-        <item index="2" class="java.lang.String" itemvalue="Ruby.file_service" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.testclass" />
       </list>
     </recent_temporary>
   </component>
@@ -371,6 +382,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13762811" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30012006" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="17" y="357" width="1366" height="211" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -378,9 +391,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30012006" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="17" y="357" width="1366" height="211" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -429,14 +440,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/file_service.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main_Server">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="918">
@@ -783,14 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file_service.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="3162">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testclass.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
@@ -807,18 +802,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dir_server.rb">
+    <entry file="file://$PROJECT_DIR$/file_class.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1921">
-          <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file_class.rb">
+    <entry file="file://$PROJECT_DIR$/ReadMe">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17324841" vertical-offset="0" max-vertical-offset="785">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dir_server.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3908046" vertical-offset="442" max-vertical-offset="1921">
+          <caret line="38" column="56" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file_service.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7504587" vertical-offset="2634" max-vertical-offset="3179">
+          <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
           <folding />
         </state>
       </provider>

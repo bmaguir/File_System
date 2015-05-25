@@ -35,7 +35,7 @@ class Dir_Server < Server
         end
 
       when "NewServer"
-        $FileSevers.push(msg["port"].to_int)
+        $FileServers.push(msg["port"])
         puts "added new File Server " + msg["port"].to_s
         #once fs added, broadcast all available fs for replication
         broadcastFS()
