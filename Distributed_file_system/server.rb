@@ -1,8 +1,11 @@
 require 'socket'                # Get sockets from stdlib
+require "rubygems"
+require "json"
+
 class Server
 
-  def initialize
-    $port = 1
+  def initialize (p)
+    $port = p
   end
 
   def startServer
@@ -12,7 +15,7 @@ class Server
     while(true)                          # Servers run forever
 
       client = server.accept;
-      puts "Accepted message starting Thread"
+      #puts "Accepted message starting Thread"
       thread_pool.push(Thread.new{thread_fun(client)})
       thread_pool.each do |thread|
         if thread.status == "false"
@@ -24,13 +27,12 @@ class Server
     end
   end
 
-  def newMessage(msg)
-
+  def newMessage(msg, client)
+    puts "old function"
   end
 
   def thread_fun(client)
     lines = Array.new
-    puts "new connection"
     disconnect = false
     while disconnect == false
       lines.clear
@@ -50,7 +52,9 @@ class Server
         disconnect = true
       end
 
-      newMessage(lines)
+      parsed = JSON.parse(lines[0])
+      #puts parsed
+      newMessage(parsed, client)
 
     end
     puts "closing thread"
