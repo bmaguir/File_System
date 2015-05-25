@@ -8,6 +8,7 @@ class Client_proxy
     $hostname = 'localhost'
     $DSport = 4444
     $openFile = nil
+    $Cache = Array.new
   end
 
   def open(filename)
@@ -76,6 +77,7 @@ class Client_proxy
       s.close
       if response["success"] == 'true'
         #file closed successfully
+        incrementCache($openFile.name)
         $openFile = nil
       else
         #file not found on the fs or lock timed out
@@ -104,9 +106,9 @@ class Client_proxy
     end
   end
 
-  def read
+  def read(filename)
     if $openFile.checkTimeStamp
-      readingFile = readFromCache
+      readingFile = readFromCache(filename, $openFile.lTs)
       if readingFile != nil
         return readingFile
       end
@@ -118,6 +120,7 @@ class Client_proxy
         #update cache with response
         readingFile = response["content"]
         puts response["content"]
+        updateCache(filename, readingFile, $openFile.fs)
         return readingFile
       else
         #file not found on the fs or lock timed out
@@ -130,9 +133,34 @@ class Client_proxy
     end
   end
 
-  def readFromCache
+  def updateCache(fn,content, fs)
+    for file in $Cache
+      if file.name == fn
+        file.content = content
+      end
+    end
+    newFile = FileClass.new(fn, true, fs)
+    newFile.content = content
+    $Cache.push(newFile)
+
+  end
+
+  def readFromCache(fn, lTs)
     #check cache for file, return nil if not found
+    for file in $Cache
+      if file.name == fn && file.lTs == lTs
+        return file.content
+      end
+    end
     return nil
+  end
+
+  def incrementCache(fn)
+    for file in $Cache
+      if file.name == fn
+        file.lTs = file.lTs + 1
+      end
+    end
   end
 
   end

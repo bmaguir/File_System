@@ -1,11 +1,12 @@
 require 'date'
 class FileClass
-  attr_accessor :lock, :lockTs, :fs, :name
+  attr_accessor :lock, :lockTs, :fs, :name, :content, :lTs
   def initialize (n, l, fs)
     $name = n
     $lock = l
     $fs = Array.new
     $fs.push(fs)
+    $lTs = 0  #logical timestamp
   end
 
   def checkLock

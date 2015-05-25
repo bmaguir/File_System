@@ -78,6 +78,7 @@ class Dir_Server < Server
     for file in $Directory
       if file.name = filename
         file.lock =  false
+        file.lTs = file.lTs +1
         return file.fs
       end
     end
